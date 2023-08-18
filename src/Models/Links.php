@@ -42,7 +42,7 @@ class Links implements \JsonSerializable
      * @param string $previous
      * @param string $last
      */
-    public function __construct(string $first, string $previous, string $last)
+    public function __construct(string $first, ?string $previous=null, ?string $last=null)
     {
         $this->first = $first;
         $this->previous = $previous;
